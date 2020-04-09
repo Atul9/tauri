@@ -1,8 +1,8 @@
 mod cmd;
-mod salt;
+mod dialog;
 #[allow(dead_code)]
 mod file_system;
-mod dialog;
+mod salt;
 
 #[cfg(not(any(feature = "dev-server", feature = "embedded-server")))]
 use std::path::PathBuf;
@@ -149,7 +149,7 @@ pub(crate) fn handle<T: 'static>(webview: &mut WebView<'_, T>, arg: &str) -> cra
         OpenDialog {
           options,
           callback,
-          error
+          error,
         } => {
           dialog::open(webview, options, callback, error);
         }

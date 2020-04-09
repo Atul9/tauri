@@ -4,13 +4,13 @@
 )]
 
 pub mod command;
+pub mod dialog;
 pub mod dir;
 pub mod file;
-pub mod rpc;
-pub mod version;
-pub mod tcp;
-pub mod dialog;
 pub mod path;
+pub mod rpc;
+pub mod tcp;
+pub mod version;
 
 pub use tauri_utils::*;
 

@@ -1,5 +1,5 @@
-use serde::Deserialize;
 use crate::api::path::BaseDirectory;
+use serde::Deserialize;
 
 #[derive(Deserialize)]
 pub struct DirOperationOptions {
